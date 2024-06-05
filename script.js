@@ -19,6 +19,7 @@ const displayOddAndEvenNumbers = () => {
   }
 };
 displayOddAndEvenNumbers();
+
 // Q3 :
 // Write a function that returns a string that has letters in alphabetical order.
 // Example string : 'Orange'
@@ -35,14 +36,14 @@ console.log(reverseString("orange"));
 
 const insertDashesBetweenTwoEvenNumbers = num => {
   let numWithDashes = "";
-  for (let i = 0; i < num.length - 1; i++) {
+  for (let i = 0; i < num.length; i++) {
     Number(num[i]) % 2 === 0 && Number(num[i + 1]) % 2 === 0
-      ? (numWithDashes += num[i] + "-" + num[i + 1])
+      ? (numWithDashes += num[i] + "-")
       : (numWithDashes += num[i]);
   }
   return numWithDashes;
 };
-console.log(insertDashesBetweenTwoEvenNumbers("246812346"));
+console.log(insertDashesBetweenTwoEvenNumbers("025468"));
 // // Q5:
 // Write a function (Agechecker) that checks age of the user if the age is larger than or equal 18, the output will be ( The user is Adult ) else ( The user is Minor)
 // Use ternary operator
